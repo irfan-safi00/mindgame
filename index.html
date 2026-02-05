@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MindMaster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<h1>🧠 MindMaster</h1>
+
+<div id="stats">
+  <h2>Level: <span id="level">1</span></h2>
+  <h2>XP: <span id="xp">0</span></h2>
+  <h3>Difficulty: <span id="difficulty">Easy</span></h3>
+</div>
+
+<button onclick="newChallenge()">🎯 New Challenge</button>
+
+<div id="challengeBox"></div>
+
+<button onclick="completeChallenge()">✅ Complete Challenge</button>
+
+<div id="reflectionSection" style="display:none;">
+  <h3>Reflection</h3>
+  <label>Rate difficulty (1-5): <input id="reflectionDifficulty" type="number" min="1" max="5"></label><br><br>
+  <label>What did you notice about yourself?:</label><br>
+  <textarea id="reflectionText" rows="3" cols="30"></textarea><br>
+  <button onclick="saveReflection()">💾 Save Reflection</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
